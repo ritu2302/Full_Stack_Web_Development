@@ -4,69 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full stack development</title>
-    <!--Element selector-->
+    <title>CSS</title>
     <style>
-        h1 {
-            color: brown;
-            font-size: 25px;
-        }
-        p {
-            color: violet;
-            font-weight: 500;
-        }
-        #first {
-            color: aqua;
-        }
-        .one {
-            color: blue;
-        }
-        .two {
-            color: brown;
-        }
-        .big{
-            font-size: 40px;
-            font-weight: 700;
-        }
-        #red {
-            color: red;
-        }
-        img {
-            width: 500px;
-            border-width: 20px;
-            border-style: solid;
-            border-color: aqua;
-            border-radius: 50px;
-            filter:drop-shadow();
-        }
         div {
-            height: 100px;
-            background-color: red;
+            background-color: aqua;
         }
         span {
-            height: 100px;
-            width: 300px;
-            background-color: blueviolet;
+            background-color: brown;
+        }
+        .background {
+            background-color: aquamarine;
+            width: 200px;
+            height: 250px;
+            border: 2px solid black;
+            padding-top: 50px;
+            padding-left: 50px;
         }
     </style>
+    
 </head>
 <body>
-    <h1>Inline css >ID Selector>Element Selector</h1>
-    <h1 class="one">Heading one</h1>
-    <p class="one">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at, ex esse rerum ullam ducimus, omnis, harum praesentium et ipsum officia excepturi similique voluptatibus cumque modi dolorum corporis magni culpa?
-    </p>
-    <h1 class="two">Heading one</h1>
-    <p class="two">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at, ex esse rerum ullam ducimus, omnis, harum praesentium et ipsum officia excepturi similique voluptatibus cumque modi dolorum corporis magni culpa?
-    </p>
-    <span class ="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium repellat sint cumque provident numquam molestias, dolorem temporibus nemo corrupti magni modi, aliquid maxime id, cum ex! Adipisci, nisi corporis?</span>
-    <h1 style ="color: brown id="red">I'm Heading</h1>
-    <h1>Style>id>class>element</h1>
-
-    <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/106257/venue-exterior-front-view-3.jpeg?isig=0&q=75"  
-    <div> I am ritu</div>  
-    <span>Ritu</span>
+    <!--display properties-->
+    <!--Box Model -->
+    <!--Units-->
+    <!--Combined selectors-->
+    <div>
+        <h2>Pointers for Block</h2>
+        <ol>
+            <li>Width of a block level element is 100% of the viewport width</li>
+            <li>Height of a block isn't set by default</li>
+            <li>Height & width can be explicitly set using CSS</li>
+        </ol>
+    </div>
+    <span>
+        <h2>Pointers for Inline</h2>
+        <ol>
+            <li>Width of a inline element is dependent on the content</li>
+            <li>Height of a inline isn't set by default</li>
+            <li>Height & width can be explicitly set using CSS</li>
+        </ol>
+    </span>
+    <div class="background">
+        <h2>Lorem ip</h2>
+    </div>
+    
 </body>
-
 </html>
