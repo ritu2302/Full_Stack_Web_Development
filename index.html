@@ -7,71 +7,47 @@
     <title>CSS</title>
     <style>
         *{
-            padding: 0px;
-            margin: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            font-family: Metropolis;
         }
-        body{
-            background-color: pink;
-            padding: 0px;
-            margin: 0px;
-        }
-        div {
-            background-color: aqua;
-        }
-        span {
-            background-color: brown;
-        }
-        .background {
-            background-color: aquamarine;
-            width: 80vw;
-            height: 250px;
-            border: 2px solid black;
-            padding-top: 50px;
-            padding-left: 50px;
-            margin-left: 100px;
-        }
-        .parent {
-            background-color: aquamarine;
-            height: 60px;
-            padding: 20px;
+        h1 {
+            background-color: crimson;
+            color: white;
+            height: 100px;
+            text-align: center;
             width: 40vw;
         }
-        .child {
-            background-color: blue;
-            height: 20px;
-            width: 80%;
+        div {
+            height: 100px;
+            margin: 20px;
+            background-color: orange;
+        }
+        .two {
+            margin-top: 50px;
+            position: static;
+            left :100px;
+        }
+        h3{
+            background-color: red;
+            position: absolute;
+            
         }
     </style>
-    
 </head>
 <body>
-    <!--display properties-->
-    <!--Box Model -->
-    <!--Units-->
-    <!--Combined selectors-->
-    <div>
-        <h2>Pointers for Block</h2>
-        <ol>
-            <li>Width of a block level element is 100% of the viewport width</li>
-            <li>Height of a block isn't set by default</li>
-            <li>Height & width can be explicitly set using CSS</li>
-        </ol>
+    <!--Positioning-->
+    <h1>Lorem ipsum</h1>
+    <div class="one">
+    <h2>Heading of div 1</h2>
     </div>
-    <span>
-        <h2>Pointers for Inline</h2>
-        <ol>
-            <li>Width of a inline element is dependent on the content</li>
-            <li>Height of a inline isn't set by default</li>
-            <li>Height & width can be explicitly set using CSS</li>
-        </ol>
-    </span>
-    <div class="background">
-        <h2>Lorem ip</h2>
-    </div>
-    <div class ="parent">
-        <div class="child"></div>
-    </div>
-    
+    <div class="two">
+    <h2>Heading of div 2</h2>
+</div>
+<div class="three">
+    <h3>Heading of div 3</h3>
+</div>
+
 </body>
 </html>
