@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-4</title>
+    <!--FlexBox : Its a tool which is used to create the layout-->
+    <!--The flexible box layout module, makes it easier to design flexible responsive layout structure without using float or positioning-->
+    <!--flex-direction :can be column & row-->
     <style>
         *{
             padding: 0;
@@ -28,17 +31,11 @@
         }
         .child {
             width: 100px;
-            height: 100px;
+            height: 150px;
             background-color: orange;
-            position: absolute;
-            margin-top :220px;
+            margin :10px;
+            display: inline-block;
              
-        }
-        .second_child {
-            width: 100px;
-            height: 100px;
-            background-color: orange;
-            position: absolute;
         }
   
     </style>
@@ -86,8 +83,12 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
         <div class ="parent">
-            <div class="second_child"></div>
             <div class ="child"></div>
+            <div class ="child"></div>
+            <div class ="child"></div>
+
         </div>
+
+        
 </body>
 </html>
