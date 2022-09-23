@@ -9,6 +9,7 @@
     <!--FlexBox : Its a tool which is used to create the layout-->
     <!--The flexible box layout module, makes it easier to design flexible responsive layout structure without using float or positioning-->
     <!--flex-direction :can be column & row-->
+    <!--Flex is a parent property-->
     <style>
         *{
             padding: 0;
@@ -29,6 +30,7 @@
             background-color: black;
             position: relative;
             display: flex;
+            flex-direction: row-reverse;
         }
         .child {
             width: 100px;
@@ -82,15 +84,11 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
+        
         <div class ="parent">
             <div class ="child"></div>
-            <div class ="child"></div>
-            <div class ="child"></div>
-            <div class ="child"></div>
-            <div class ="child"></div>
-            <div class ="child"></div>
-
-
+            <div style="background-color: red" class="child"></div>
+            <div style ="background-color: blueviolet" class="child"></div>
         </div>
 
         
