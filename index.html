@@ -26,13 +26,12 @@
             width: 100vw;
         }
         .parent {
-            height :500px;
+            min-height :500px;
             background-color: black;
             position: relative;
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         .child {
             width: 100px;
@@ -91,8 +90,14 @@
             <div class ="child"></div>
             <div style="background-color: red" class="child"></div>
             <div style ="background-color: blueviolet" class="child"></div>
+            <div class ="child"></div>
+            <div style="background-color: red" class="child"></div>
+            <div style ="background-color: blueviolet" class="child"></div>
+            <div class ="child"></div>
+            <div style="background-color: red" class="child"></div>
+            <div style ="background-color: blueviolet" class="child"></div>
         </div>
-
+        
         
 </body>
 </html>
