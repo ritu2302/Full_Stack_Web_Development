@@ -67,6 +67,16 @@
         }
         h2:hover {
             background-color: crimson;
+            cursor: pointer;
+        }
+        div::selection{
+            background: lime;
+        }
+        h2::after{
+            content: "I'm after";
+            font-size: 0.5 rem;
+            color: cyan;
+            position: relative;
         }
     </style>
 </head>
@@ -146,5 +156,6 @@
             <h2>i'm heading</h2>
             <h2>I'm heading</h2>
             <div> I'm div again</div>
+            
 </body>
 </html>
