@@ -78,6 +78,21 @@
             color: cyan;
             position: relative;
         }
+        div.transistion {
+            background-color: black;
+            min-height: 200px;
+        }
+        div.trans_child {
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+        }
+        div.transistion:hover div.trans_child {
+            transform:translateX(500px)
+        }
     </style>
 </head>
 <body>
@@ -156,6 +171,11 @@
             <h2>i'm heading</h2>
             <h2>I'm heading</h2>
             <div> I'm div again</div>
+            <hr>
+
+            <div class="transistion"> 
+                <div class="trans_child"></div>
+            </div>
             
 </body>
 </html>
