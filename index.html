@@ -27,7 +27,7 @@
         }
         .parent {
             min-height :500px;
-            background-color: black;
+            background-color: #FFE6F7;
             position: relative;
             display: flex;
             flex-direction: row;
@@ -40,6 +40,24 @@
             background-color: orange;
             margin :10px;
              
+        }
+        .background {
+            color: white;
+        }
+        h1.background {
+            background-color: black;
+        }
+        h2.background{
+            background-color: orange;
+        }
+        h3.background{
+            background-color: crimson;
+        }
+        span.background{
+            background-color: orange;
+        }
+        h2.background#unique {
+            background-color: aqua;
         }
   
     </style>
@@ -98,7 +116,15 @@
             <div style="background-color: red" class="child"></div>
             <div style ="background-color: blueviolet" class="child"></div>
         </div>
-        
-        
+        <h1 style="background-color:blueviolet ;">Heading One</h1>
+        <h2 style="background-color: cyan">Heading two</h2>
+        <h3 style="background-color: orange">Heading three</h3>
+        <hr/>
+        <br/>
+        <h1 class="background">Heading one</h1>
+        <h2id="unique" class="background">Heading two</h2>
+        <h3 class="background">Heading three</h3>
+
+        <span class="background">I'm span</span>
 </body>
 </html>
