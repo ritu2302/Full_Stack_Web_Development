@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>CSS CARD</title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Metropolis;
-        }
-        h1 {
-            background-color: crimson;
-            color: white;
-            height: 100px;
             text-align: center;
-            width: 40vw;
+            font-family: sans-serif;
         }
-        div {
-            height: 100px;
-            margin: 20px;
-            background-color: orange;
-        }
-        .two {
-            margin-top: 50px;
-            position: static;
-            left :100px;
-        }
-        h3{
-            background-color: red;
-            position: absolute;
+        
+        .main {
+            height: 480px;
+            width: 350px;
+            margin top: 20px;
+            background-color:white;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            left: 30%;
+            border-radius: 20px;
+            border-style:solid;
             
+        }
+        .paris {
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+        }
+        p{
+            padding: 5px 20px;
+        }
+        h2{
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            padding: 3px 8px;
+            position: absolute;
+            bottom: -10px;
+            right: 30%;
+        }
+        
+    
+        .date {
+            background-color: crimson;
+            color: white; 
+            padding: 10px 7px;
+            border-radius: 100%;
+            text-align: center;
+            position: absolute;
+            right: 10px;
+            top: 10px;
         }
     </style>
 </head>
 <body>
-    <!--Positioning-->
-    <h1>Lorem ipsum</h1>
-    <div class="one">
-    <h2>Heading of div 1</h2>
+    <div class="main"> 
+        <div class="date">11<sup>th</sup></div>
+        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/Places-To-Visit-In-Paris_11th-jun.jpg" class="paris">
+        <h1>Paris</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo velit aperiam beatae sunt harum veniam corrupti facilis asperiores quasi autem rem deserunt explicabo qui omnis, sit at sed illo ea.</p>
+        <h2>Visit Paris</h2>   
     </div>
-    <div class="two">
-    <h2>Heading of div 2</h2>
-</div>
-<div class="three">
-    <h3>Heading of div 3</h3>
-</div>
-
+       
+   
 </body>
 </html>
