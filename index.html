@@ -22,11 +22,20 @@
             transition: 1s ease;
         }
         div.parent:hover div.child {
-            transform: translateX(80vw);
+           animation: 1s move;
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(0vw);
+            }
+            100%{
+                transform: translateX(80vw);
+            }
         }
     </style>
 </head>
 <body>
+    <!--Transistion is not a element property its a state property-->
     <div class="parent">
         <div class="child"></div>
     </div>
