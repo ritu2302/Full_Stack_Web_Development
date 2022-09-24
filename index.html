@@ -20,11 +20,11 @@
             height: 100px;
             background-color: orange;
             transition: 1s ease;
+            animation: 1s move;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
         }
-        div.parent:hover div.child {
-           animation: 1s move;
-           animation-fill-mode: forwards;
-        }
+        
         @keyframes move {
             0%{
                 transform: translateX(0vw);
