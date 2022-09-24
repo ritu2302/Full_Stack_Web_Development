@@ -23,6 +23,7 @@
         }
         div.parent:hover div.child {
            animation: 1s move;
+           animation-fill-mode: forwards;
         }
         @keyframes move {
             0%{
@@ -36,7 +37,8 @@
 </head>
 <body>
     <!--Transistion is not a element property its a state property-->
-    <div class="parent">
+    <!--Transisition is a parent property-->
+        <div class="parent">
         <div class="child"></div>
     </div>
 </body>
