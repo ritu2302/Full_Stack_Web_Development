@@ -1,181 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-4</title>
-    <!--FlexBox : Its a tool which is used to create the layout-->
-    <!--The flexible box layout module, makes it easier to design flexible responsive layout structure without using float or positioning-->
-    <!--flex-direction :can be column & row-->
-    <!--Flex is a parent property-->
+    <title>CSS-5</title>
     <style>
         *{
-            padding: 0;
-            margin: 0;
+            margin: 0px;
+            padding: 0px;
             box-sizing: border-box;
         }
-        nav {
-            background-color: orange;
-            color: white;
-            padding: 10px;
-            font-size: 1.2 rem;
-            position: sticky;
-            top:0px;
-            width: 100vw;
+        div.parent{
+            height: 500px;
+            background-color: black;
         }
-        .parent {
-            min-height :500px;
-            background-color: #FFE6F7;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-        }
-        .child {
+        div.child{
             width: 100px;
-            background-color: orange;
-            margin :10px;
-             
-        }
-        .background {
-            color: white;
-        }
-        h1.background {
-            background-color: black;
-        }
-        h2.background{
-            background-color: orange;
-        }
-        h3.background{
-            background-color: crimson;
-        }
-        span.background{
-            background-color: orange;
-        }
-        h2.background#unique {
-            background-color: aqua;
-        }
-        div.special{
-            background-color: green;
-        }
-        div.children div{
-            background-color: lime;
-        }
-        h2:hover {
-            background-color: crimson;
-            cursor: pointer;
-        }
-        div::selection{
-            background: lime;
-        }
-        h2::after{
-            content: "I'm after";
-            font-size: 0.5 rem;
-            color: cyan;
-            position: relative;
-        }
-        div.transistion {
-            background-color: black;
-            min-height: 200px;
-        }
-        div.trans_child {
-            background-color: orange;
             height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            transition-duration: 0.5s;
-            transition-timing-function: ease-out;
+            background-color: orange;
+            transition: 1s ease;
         }
-        div.transistion:hover div.trans_child {
-            transform:translateX(500px)
+        div.parent:hover div.child {
+            transform: translateX(80vw);
         }
     </style>
 </head>
 <body>
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-       
+    <div class="parent">
+        <div class="child"></div>
     </div>
-    <nav>Lorem</nav>
-    <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.</div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit. Veniam recusandae sed suscipit consectetur, error maxime itaque assumenda quo id explicabo animi, blanditiis aut mollitia amet nam, est dolor.
-        
-        <div class ="parent">
-            <div class ="child"></div>
-            <div style="background-color: red" class="child"></div>
-            <div style ="background-color: blueviolet" class="child"></div>
-            <div class ="child"></div>
-            <div style="background-color: red" class="child"></div>
-            <div style ="background-color: blueviolet" class="child"></div>
-            <div class ="child"></div>
-            <div style="background-color: red" class="child"></div>
-            <div style ="background-color: blueviolet" class="child"></div>
-        </div>
-        <h1 style="background-color:blueviolet ;">Heading One</h1>
-        <h2 style="background-color: cyan">Heading two</h2>
-        <h3 style="background-color: orange">Heading three</h3>
-        <hr/>
-        <br/>
-        <h1 class="background">Heading one</h1>
-        <h2id="unique" class="background">Heading two</h2>
-        <h3 class="background">Heading three</h3>
-
-        <span class="background">I'm span</span>
-
-        <div class ="special">I'm div</div>
-        <h1>I'm Heading</h1>
-        <h2>I'm heading</h2>
-        <div class="special"> I'm div again</div>
-
-        <div class="children">
-            <div>I'm div</div>
-            <h1>I'm heading</h1>
-            <h2>i'm heading</h2>
-            <h2>I'm heading</h2>
-            <div> I'm div again</div>
-            <hr>
-
-            <div class="transistion"> 
-                <div class="trans_child"></div>
-            </div>
-            
 </body>
 </html>
