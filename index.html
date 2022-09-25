@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
-   <title>CSS-5</title>
+   <title>CSS-6</title>
    <style>
     div.parent{
+        display: flex;
+        align-items: stretch;
         background-color: black;
-        color: white;
-        font-size: 4rem;
+        height: 100vh;
     }
-    @media  (min-width: 700px) {
-        div.parent {
-            background: orange;
-            color: white;
-            font-size: 0.8 rem;
+    div.child {
+        background-color: yellow;
+        flex-basis: 80%;
+    }
+    div.sidebar{
+        background-color: crimson;
+        flex-basis: 20%;
+    }
+    @media  (max-width: 450px) {
+        div.sidebar {
+            flex-basis: 0%;
         }
-    }
-
-    @media  (max-width: 500px) {
-        div.parent {
-            background: crimson;
-            color: white;
-            font-size: 0.8 rem;
+        div.child {
+            flex-basis: 100%;
         }
-    }
+        }
+    
         
 
    </style>
@@ -34,9 +37,8 @@
 </head>
 <body>
     <div class="parent">
-        <h1> I'm Heading</h1>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum pariatur, repellendus praesentium id voluptatum explicabo alias quos sequi. Dignissimos neque iste nam, perferendis asperiores voluptate at. Quis necessitatibus officia unde.
-
+        <div class="sidebar"></div>
+        <div class="child"></div>
 
     </div>
 </body>
