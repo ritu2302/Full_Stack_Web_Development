@@ -23,14 +23,20 @@
     }
     @media  (max-width: 450px) {
         div.sidebar {
-            flex-basis: 0%;
+            animation: 5s expand linear infinite;
         }
         div.child {
             flex-basis: 100%;
         }
+    }
+    @keyframes expand {
+        0%{
+            flex-basis: 0%;
         }
-    
-        
+        100%{
+            flex-basis: 50%;
+        }
+    }
 
    </style>
     
