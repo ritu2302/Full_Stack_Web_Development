@@ -1,51 +1,37 @@
+<!--Java script is a programming language-->
+<!--JS supports inheritance-->
+<!--Javascript is a dynamically typed language-->
+<!--JS needs interpreter-->
+<!--Its a single threaded-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>CSS-6</title>
-   <style>
-    div.parent{
-        display: flex;
-        align-items: stretch;
-        background-color: black;
-        height: 100vh;
-    }
-    div.child {
-        background-color: yellow;
-        flex-basis: 80%;
-    }
-    div.sidebar{
-        background-color: crimson;
-        flex-basis: 20%;
-    }
-    @media  (max-width: 450px) {
-        div.sidebar {
-            animation: 5s expand linear infinite;
+    <title>JS-1</title>
+    <style>
+        body {
+            background-color: white;
+            height: 100vh;
         }
-        div.child {
-            flex-basis: 100%;
+        h2 {
+            color: black;
         }
-    }
-    @keyframes expand {
-        0%{
-            flex-basis: 0%;
-        }
-        100%{
-            flex-basis: 50%;
-        }
-    }
 
-   </style>
-    
+        body.dark h2{
+            color: white;
+        }
+        body.dark {
+            background-color: black;
+        }
+
+    </style>
 </head>
-<body>
-    <div class="parent">
-        <div class="sidebar"></div>
-        <div class="child"></div>
+<body class="dark">
+    <h2> I'm Heading</h2>
 
-    </div>
+    
 </body>
 </html>
