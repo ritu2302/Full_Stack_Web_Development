@@ -25,3 +25,9 @@ console.log(false)
 
 var age = 19
 console.log(age)
+
+var age1 = null     //null is a value, null is just an empty space
+console.log(age1)
+console.log(typeof age1) //null is an object
+
+console.log(Name)  //Refrence error
