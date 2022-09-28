@@ -17,3 +17,7 @@ console.log(typeof 1.2)
 console.log(typeof 1555515465461515645415)
 console.log(typeof -1)
 console.log(typeof -1.2)
+
+//Boolean
+console.log(typeof true)
+console.log(false)
